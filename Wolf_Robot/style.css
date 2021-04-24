@@ -1,0 +1,10 @@
+html {
+    background-color: #2CDA9D;
+}
+
+.robot > svg {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10rem;
+}
+
