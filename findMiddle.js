@@ -5,15 +5,15 @@
 
 //Use Math floor to get the 'middle' - The Math.floor() function returns the largest integer less than or equal to a given number.
 
-function getMiddle(s) {
+const getMiddle = (s) => {
 
     let middle = Math.floor(s.length/2)
+    //middle here returns half, but it will be index in the slice method
 
-    return s.length % 2 === 0
-        ? s.slice(middle-1, middle+1) //this returns the two letters between middle-1 (middle letter) plus the letter after the middle
-        : s.slice(middle, middle+1) //this returns the middle letter
+    return s.length % 2 === 0 ? s.slice(middle-1, middle+1) : s.slice(middle,middle+1) 
 
 }
 
 console.log(getMiddle("apples"))
 console.log(getMiddle("tests"))
+
